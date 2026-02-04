@@ -1,0 +1,15 @@
+# Local settings
+.claude/settings.local.json
+*.local.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Node (if any plugins use it)
+node_modules/

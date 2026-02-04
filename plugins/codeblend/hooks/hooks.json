@@ -1,0 +1,37 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/on-session-start.sh\"",
+          "timeout": 10000
+        }
+      ]
+    },
+    {
+      "event": "PostToolUse",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/on-tool-use.sh\"",
+          "timeout": 5000
+        }
+      ]
+    },
+    {
+      "event": "PostToolUse",
+      "matcher": {
+        "tool_name": "Bash"
+      },
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/on-commit.sh\"",
+          "timeout": 30000
+        }
+      ]
+    }
+  ]
+}

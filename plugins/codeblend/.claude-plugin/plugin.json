@@ -1,0 +1,10 @@
+{
+  "name": "codeblend",
+  "version": "1.0.0",
+  "description": "Automatically records Claude Code usage metrics when git commits are made",
+  "author": "CodeBlend",
+  "repository": "",
+  "autoDiscover": {
+    "hooks": "hooks"
+  }
+}
