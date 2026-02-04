@@ -1,7 +1,7 @@
 {
-  "name": "arechen-plugins",
+  "name": "awesome-plugins",
   "owner": {
-    "name": "arechen"
+    "name": "Ares Chen"
   },
   "metadata": {
     "description": "Custom Claude Code plugins marketplace"
