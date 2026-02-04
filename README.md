@@ -10,10 +10,10 @@ Install the entire marketplace with a single command:
 /plugin marketplace add chenxizhang/claude-code-plugins
 ```
 
-Or install the codeblend plugin directly:
+Or add the marketplace and install codeblend plugin in one line:
 
 ```bash
-/plugin add chenxizhang/claude-code-plugins/plugins/codeblend
+/plugin marketplace add chenxizhang/claude-code-plugins && /plugin install codeblend
 ```
 
 Or install individual plugins locally:
